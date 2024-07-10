@@ -80,6 +80,16 @@ html {
     background-color: grey;
 }
 
+.preview-image-container img{
+    display: flex;
+    justify-content: center;
+    max-width: 40%;
+    margin: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
 
 
 
