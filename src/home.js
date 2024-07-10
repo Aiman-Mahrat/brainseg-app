@@ -24,17 +24,21 @@ export default function Home() {
         }
 
         const formData = new FormData(); 
-        formData.append("file", MRIimage);
+        formData.append("image", MRIimage);
 
         try {
-            const response = await fetch("/upload", {
+            const response = await fetch("http://127.0.0.1:8000/api/upload/", {
                 method: "POST", 
                 body: formData,
             });
 
             if(response.ok) {
+                const data = await response.json();
                 alert("File uploaded Successfully!"); 
+                console.log("Response data:", data);
             } else {
+                const errorData = await response.json();
+                console.error("Failed to upload file:", errorData);
                 alert("Failed to upload file.");
             }
         } catch (error) {
@@ -60,7 +64,7 @@ export default function Home() {
                             <img src={preview} alt="Preview img" className="image-preview" />
                         </div>
                     )}
-                    <input type="submit" className="submit-btn" />
+                    <input type="submit" className="submit-btn" onClick={handleSubmit}/>
                 </div>
             </div>
         </div>
