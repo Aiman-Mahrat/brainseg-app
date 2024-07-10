@@ -22,8 +22,8 @@ html {
     background-color: white;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    border-bottom-right-radius: 5rem;
-    border-bottom-left-radius: 5rem;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
 
 .header h1{
@@ -79,6 +79,9 @@ html {
     cursor: pointer;
     background-color: grey;
 }
+
+
+
 
 
 
