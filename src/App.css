@@ -11,24 +11,28 @@ html, body {
 }
 
 html {
-    background-color: black;
+    background-color: white;
 }
 
 .container {
     text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #000000, #100d0f, #18161a, #1c1e24, #1e272e);
 }
 
 .first-container {
-    background-color: white;
+    background-image: linear-gradient(to top, #b33939, #c63f3f, #d84545, #ec4c4c, #ff5252);
     padding-top: 3rem;
     padding-bottom: 5rem;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
+    box-shadow: 0px 0px 0px black;
 }
 
 .header h1{
     font-size: 4rem;
     margin-bottom: 0.5rem;
+    color: white;
 }
 .header p{
     font: 2rem;
@@ -50,7 +54,7 @@ html {
 .custom-file-upload {
     border-radius: 40px;
     padding: 0.75rem 0rem;
-    background-color: #2980b9;
+    background-color: #3c40c6;
     color: white;
     font-weight: 400;
     width: 50%;
@@ -60,7 +64,7 @@ html {
     transition: 0.2s;
 }
 .custom-file-upload:hover{
-    background-color: #3498db;
+    background-color: #4d52e7;
 }
 .submit-btn {
     font-family: 'Poppins', sans-serif;
@@ -77,7 +81,7 @@ html {
 }
 .submit-btn:hover {
     cursor: pointer;
-    background-color: grey;
+    background-color: rgb(54, 54, 54);
 }
 
 .preview-image-container img{
